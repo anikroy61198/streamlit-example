@@ -11,7 +11,7 @@ openai.api_key = API_KEY
 # Define function to generate response from API
 def generate_response(prompt):
     response = openai.Completion.create(
-        engine='davinci-codex',
+        engine='text-davinci-003',
         prompt=prompt,
         max_tokens=1024,
         n=1,
@@ -22,7 +22,7 @@ def generate_response(prompt):
 
 # Define Streamlit app
 def app():
-    st.title('ChatGPT Demo')
+    st.title('Ask Solvaphile')
 
     # Allow user to enter a prompt
     prompt = st.text_input('Enter a prompt:', '')
