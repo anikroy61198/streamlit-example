@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # Define API key and endpoint URL
-API_KEY = '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'
+API_KEY = apikey.API_KEY
 #ENDPOINT = 'https://api.openai.com/v1/engines/davinci-codex/completions'
 
 # Set up OpenAI API
