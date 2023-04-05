@@ -1,12 +1,14 @@
 import streamlit as st
 import openai
+import os
+from dotenv import load_dotenv
 
 # Define API key and endpoint URL
-API_KEY = apikey.API_KEY
+load_dotenv(".env")
 #ENDPOINT = 'https://api.openai.com/v1/engines/davinci-codex/completions'
 
 # Set up OpenAI API
-openai.api_key = API_KEY
+openai.api_key = os.getenv("API_KEY")
 
 # Define function to generate response from API
 def generate_response(prompt):
